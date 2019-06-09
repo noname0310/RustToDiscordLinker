@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\win-x86\hostpolicy.dll
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\win-x86\hostfxr.dll
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\win-x86\DiscordLinker.exe
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\win-x86\DiscordLinker.deps.json
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\win-x86\DiscordLinker.runtimeconfig.json
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\win-x86\DiscordLinker.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\win-x86\DiscordLinker.dll
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\win-x86\DiscordLinker.pdb
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\win-x86\DiscordLinker.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\win-x86\DiscordLinker.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\win-x86\DiscordLinker.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\win-x86\DiscordLinker.dll
+C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\win-x86\DiscordLinker.pdb
