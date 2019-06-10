@@ -8,16 +8,3 @@ C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordL
 C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\DiscordLinker.AssemblyInfo.cs
 C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\DiscordLinker.dll
 C:\Users\Administrator\Desktop\repos\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\DiscordLinker.pdb
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\DiscordLinker.deps.json
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\DiscordLinker.runtimeconfig.json
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\DiscordLinker.runtimeconfig.dev.json
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\DiscordLinker.dll
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\bin\Release\netcoreapp2.1\DiscordLinker.pdb
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\DiscordLinker.csprojAssemblyReference.cache
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\DiscordLinker.Properties.Resources.resources
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\DiscordLinker.csproj.GenerateResource.cache
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\DiscordLinker.csproj.CoreCompileInputs.cache
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\DiscordLinker.AssemblyInfoInputs.cache
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\DiscordLinker.AssemblyInfo.cs
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\DiscordLinker.dll
-C:\noname\Projects\RustServer\ServerProject\DiscordLinkerNetCore\DiscordLinker\DiscordLinker\obj\Release\netcoreapp2.1\DiscordLinker.pdb

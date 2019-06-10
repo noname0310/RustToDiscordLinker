@@ -26,6 +26,7 @@ namespace DiscordLinker
                 json2.Add("apikey", "");
                 json2.Add("DataFileLocate", "");
                 json2.Add("DisplayRoom", "");
+                json2.Add("CommandPrefix", ".");
 
                 swcreate.WriteLine(json2.ToString());
                 swcreate.Close();
@@ -50,18 +51,29 @@ namespace DiscordLinker
                 Console.WriteLine("DataFileLocate값이 없습니다!");
                 returnbool = true;
             }
-
-            FileInfo datafile = new FileInfo(ConfigJson["DataFileLocate"].ToString());
-            if (datafile.Exists == false)
+            else
             {
-                Console.WriteLine("DataFileLocate값이 잘못되었습니다!");
-                returnbool = true;
+                try
+                {
+                    FileInfo datafile = new FileInfo(ConfigJson["DataFileLocate"].ToString());
+                }
+                catch (ArgumentException)
+                {
+                    Console.WriteLine("DataFileLocate값이 잘못되었습니다!");
+                    returnbool = true;
+                }
             }
 
 
             if (ConfigJson["DisplayRoom"].ToString() == "")
             {
                 Console.WriteLine("DisplayRoom값이 없습니다!");
+                returnbool = true;
+            }
+
+            if (ConfigJson["CommandPrefix"].ToString() == "")
+            {
+                Console.WriteLine("CommandPrefix값이 없습니다!");
                 returnbool = true;
             }
 

@@ -15,6 +15,17 @@ namespace DiscordLinker
 
         static void Main(string[] args)
         {
+            Console.WriteLine(
+                @"  ______  _                            _  _      _         _               " + "\n" +
+                @"  |  _  \(_)                          | || |    (_)       | |              " + "\n" +
+                @"  | | | | _  ___   ___  ___   _ __  __| || |     _  _ __  | | __ ___  _ __ " + "\n" +
+                @"  | | | || |/ __| / __|/ _ \ | '__|/ _` || |    | || '_ \ | |/ // _ \| '__|" + "\n" +
+                @"  | |/ / | |\__ \| (__| (_) || |  | (_| || |____| || | | ||   <|  __/| |   " + "\n" +
+                @"  |___/  |_||___/ \___|\___/ |_|   \__,_|\_____/|_||_| |_||_|\_\\___||_|   " + "\n" +
+                "\n" +
+                "  V1.0.0                                                    made by noname" +
+                "\n"
+                );
             if (fileManager.CheckandCreateConfig() == false) return;
 
             timer.Interval = 1000; // 1s
@@ -36,8 +47,32 @@ namespace DiscordLinker
             }
         }
 
+        //static bool WaitNextConnection = true;
+
         static async void timer_ElapsedAsync(object sender, ElapsedEventArgs e)
         {
+            /*bool NetAvailable = System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable();
+            if (NetAvailable == true)
+            {
+                if (WaitNextConnection == true)
+                {
+                    await Client.LogoutAsync();
+                    await Client.StopAsync();
+                    Client.Dispose();
+                    Client = new DiscordSocketClient();
+
+                    await Client.LoginAsync(Discord.TokenType.Bot, fileManager.ConfigJson["apikey"].ToString(), true);
+                    await Client.StartAsync();
+
+                    Client.Ready += Client_Ready;
+                    Client.MessageReceived += HandleCommand;
+                }
+            }
+            else
+            {
+                WaitNextConnection = true;
+            }*/
+
             string msg = IPCManager.check_printDataFile(fileManager.ConfigJson["DataFileLocate"].ToString());
             if (msg == null)
                 return;

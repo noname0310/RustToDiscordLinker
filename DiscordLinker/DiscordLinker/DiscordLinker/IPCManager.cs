@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.RegularExpressions;
 using System.Timers;
 using Newtonsoft.Json.Linq;
 
@@ -44,19 +45,19 @@ namespace DiscordLinker
                 {
                     msgline = msgdata.msg;
                     if (msgdata.formatted == true)
-                        msgline = "```" + msgline + "```";
+                        msgline = "\n" + "```" + msgline + "```";
                 }
                 else
                 {
                     if (msgdata.formatted == true)
-                        msgline = "```" + msgdata.username + ": " + msgdata.msg + "```";
+                        msgline = "\n" + "```" + msgdata.username + ": " + msgdata.msg + "```";
                     else
                         msgline = "**" + msgdata.username + "**" + ": " + msgdata.msg;
                 }
                 
-                msg = msg + "\n\n" + msgline;
+                msg = msg + "\n" + msgline;
             }
-            msg = msg.Substring(2);
+            msg = msg.Substring(1);
 
             DataFileJson["ServerMsgData"] = null;
             SaveData(filelink, DataFileJson);
@@ -80,11 +81,20 @@ namespace DiscordLinker
                 DataFileJson["DiscordMsgData"] = null;
 
             DiscordMsgData msgData;
+            string commandPrefix = Program.fileManager.ConfigJson["CommandPrefix"].ToString();
 
-            if (msg.Substring(0, 1) == ">")
-                msgData = new DiscordMsgData(username, msg.Substring(1), true, SplitArguments(msg.Substring(1)));
+            if(msg.Length >= commandPrefix.Length)
+            {
+                if (msg.Substring(0, commandPrefix.Length) == commandPrefix)
+                {
+                    string cmdstr = msg.Substring(commandPrefix.Length);
+                    msgData = new DiscordMsgData(username, cmdstr, true, SplitArguments(cmdstr));
+                }
+                else
+                    msgData = new DiscordMsgData(username, StripHTML(msg), false, null);
+            }
             else
-                msgData = new DiscordMsgData(username, msg, false, null);
+                msgData = new DiscordMsgData(username, StripHTML(msg), false, null);
 
             List<DiscordMsgData> msgDatas = (DataFileJson["DiscordMsgData"].ToObject<List<DiscordMsgData>>());
             if (msgDatas == null)
@@ -231,6 +241,11 @@ namespace DiscordLinker
                 j--;
 
             return (new string(parmChars, 0, j)).Split(new[] { '\n' });
+        }
+
+        string StripHTML(string input)
+        {
+            return Regex.Replace(input, "<.*?>", String.Empty);
         }
     }
 }

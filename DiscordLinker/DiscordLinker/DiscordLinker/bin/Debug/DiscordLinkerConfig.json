@@ -1,5 +1,6 @@
-{
+﻿{
   "apikey": "NDY4NTUzNzU3MDY4NjIzODg0.D0kr8A.ifzIM62QbQ0VOt_lpTAweo47D4A",
   "DataFileLocate": "C:\\Users\\Administrator\\Desktop\\Server\\rustds\\oxide\\data\\DiscordLinker.json",
-  "DisplayRoom": "467896702234525696"
+  "DisplayRoom": "467896702234525696",
+  "CommandPrefix": ","
 }
